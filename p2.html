@@ -1,0 +1,108 @@
+<html>
+<head>
+<style>
+    {
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+
+/* =Basic HTML, Non-essential
+----------------------------------------------------------------------*/
+
+a {
+	text-decoration: none;
+}
+
+body {
+	background: #ddd;
+	color: #777;
+	margin: 0 auto;
+	padding: 50px;
+	position: relative;
+	width: 620px;
+}
+
+h1 {
+	background: inherit;
+	border-bottom: 1px dashed #000;
+	color: #000;
+	font: 20px Georgia, serif;
+	margin: 0 0 10px;
+	text-align: center;
+}
+
+/* =Hoverbox Code
+----------------------------------------------------------------------*/
+
+.hoverbox {
+	list-style: none;
+}
+
+.hoverbox a {
+	cursor: default;
+}
+
+.hoverbox a .preview {
+	display: none;
+}
+
+.li-first a:hover img{
+  -webkit-transition: all linear.5;
+  -webkit-transform: scale(1.8);
+  z-index: 2000;
+}
+.hoverbox a:hover .preview {
+	display: block;
+	position: absolute;
+	top: -33px;
+	left: -45px;
+	z-index: 1;
+}
+
+.hoverbox img {
+	background: #fff;
+	border:1px solid #ddd;
+	color: inherit;
+	padding: 2px;
+	vertical-align: top;
+	width: 100px;
+	height: 75px;
+}
+
+.hoverbox li {
+	background: #eee;
+	border:1px solid #ccc;
+	color: inherit;
+	display: inline;
+	float: left;
+	margin: 3px;
+	padding: 5px;
+	position: relative;
+}
+
+.hoverbox .preview {
+	border-color: #000;
+	width: 200px;
+	height: 150px;
+}
+</style>
+</head>
+<body>
+<h1>Hoverbox Image Gallery</h1>
+<ul class="hoverbox">
+<li class="li-first">
+<a href="#"><img src="terre.jpeg" /></a>
+</li>
+<li>
+<a href="#"><img src="mountain.jpeg" /><img src="mountain.jpeg" class="preview" /></a>
+</li>
+<li>
+<a href="#"><img src="waterfalls.jpeg" /><img src="waterfalls.jpeg" class="preview" /></a>
+</li>
+<li>
+<a href="#"><img src="lighthouse.jpeg" /><img src="lighthouse.jpeg" class="preview" /></a>
+</li>
+
+</body>
+</html>
